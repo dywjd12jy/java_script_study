@@ -1,0 +1,33 @@
+*{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.tab_btn{
+}
+.tab_btn ul{
+    display: flex;
+}
+.tab_btn ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    font-size: 20px;
+    background-color: #ccc;
+    border: solid 1px #000;
+}
+.tab_menu{}
+.tab_menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:blanchedalmond;
+    width: 300px;
+    height: 100px;
+    border: solid 1px #000;
+}
+.tab_menu ul li{
+    list-style: disc;
+}
