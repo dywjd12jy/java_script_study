@@ -7,5 +7,8 @@ let tM_li = document.querySelector('.tab_menu ul li');
 tB_li.addEventListener("click", function(){
     alert("hello");
 });
+tM_li.addEventListener("click", function(){
+    alert("hello");
+});
 console.log(tB_li);
 
