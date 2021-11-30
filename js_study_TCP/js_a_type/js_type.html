@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS type</title>
+</head>
+<body>
+    <h1>JS_Type</h1>
+
+    <ul> 원시타입
+        <li>
+            <h2>숫자 타입
+                <p id="number"></p>
+            </h2>
+        </li>
+        <li><h2 id="string">문자열</h2></li>
+        <li><h2 id="boolean">불리언</h2></li>
+        <li><h2 id="symbol">심볼</h2></li>
+        <li><h2 id="typeof">typeof</h2></li>
+        <li><h2 id="null_undefined">null, undefined</h2></li>
+    </ul>
+    <ul> 객체타입
+        <li><h2 id="object">객체</h2></li>
+    </ul>
+    
+    <script>
+        // 숫자타입 number
+        let fiNum = 10;
+        let seNum = 10.00;
+        let thNum = 10e2;
+        let foNum = 10e-2;
+
+        document.getElementById("number").innerHTML = 
+        fiNum + "<br>" + seNum + "<br>" + thNum + "<br>" + foNum;
+    
+        // 문자열 string
+        let fStr = "큰따옴표를 사용한 문자열";
+        let sStr = '작은따옴표 사용한 문자열';
+        let thStr = "큰따옴표로 둘러싸인 '작은따옴표'";
+        let foStr = '작은따옴표로 둘러싸인 "큰따옴표"';
+
+        //number + string
+        //<html>
+        //    <body>
+        //      <p id = "result"></p>
+        //    </body>
+        //</html> 구조라는걸 가정하에
+
+        let num = 10;
+        let str = "string"
+        document.getElementByid("result").innerHTML = (num + str);
+        //10string
+
+        // 불리언 boolean
+        let fiBoo = 10;
+        let seBoo = 11;
+        document.getElementByid("result").innerHTML = (fiBoo == seBoo);//false
+        
+        // 심볼 symbole
+        let Sym = Symbol("javascript");//symbol type
+        let SymObj = Object(sym);//object type
+
+        //typeof 연산자
+        typeof 10;        //number type
+        typeof "문자열";  //number type
+        typeof true;      //number type
+        typeof undefined; //number type
+        typeof null;      //number type
+
+        //null과 undefined
+        let numUn;   //초기화하지 않았으므로 undefined 값을 변환
+        let stNu = null; //object타입의 null 값
+        typeof secoNumUn; //정의되지 않은 변수에 접근하면 undefined 값을 반환
+
+        null == undefined; //true
+        null === undefined; //false
+
+        //object 객체
+        let dog = { name: "장군", age: 5 }; //객체의 생성
+        document.getElementById("result"),innerHTML = 
+            "강아지의 이름은" + dog.name + "이고, 나이는" + dog.age + "살 입니다.";
+
+    </script>
+</body>
+</html>

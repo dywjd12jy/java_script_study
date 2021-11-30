@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_타입변환</title>
+</head>
+<body>
+    <script>
+
+        // 타입 변환 (type conversion)
+        // let num = 20 //Number type의 20
+        // num = "이십"; //String type의 "이십"
+        // let num; //한 변수에 여러 번 대입할 수 있지만, 변수의 재선언은 할 수 없다. 재선언문은 무시된다.
+    
+        //묵시적 타입 변환 (implicit type conversion)
+        10 + "문자열";//문자열 연결을 위해 숫자 10이 문자열로 변환됨.
+        console.log("3" * "5"); //15 //곱셈 연산을 위해 두 문자열이 모두 숫자로 변환됨.
+        console.log("3" + "5"); //더하기는 8이 아니라 35로 나옴.
+        console.log("3" - "5"); //-2
+        console.log("6" / "2"); //3
+        console.log("6" % "2"); //0
+        
+        1 - "문자열"; //NaN
+    
+    </script>
+</body>
+</html>
